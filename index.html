@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0a1020">
+  <meta name="description" content="M.C.R.I. 怪奇生物研究所：探索、研究、收容未知生命。">
+  <title>M.C.R.I.｜怪奇生物研究所</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+<header class="topbar">
+  <a class="brand" href="#home"><span class="brand-mark">M</span><span><b>M.C.R.I.</b><small>怪奇生物研究所</small></span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="開啟導覽">☰</button>
+  <nav id="mainNav">
+    <a href="#home" class="nav-link active">⌂ 首頁</a><a href="#exploration" class="nav-link">⌁ 探索</a><a href="#guide" class="nav-link">▤ 研究所導覽</a>
+    <a href="#database" class="nav-link">◈ 生物圖鑑</a><a href="#missions" class="nav-link">⚑ 研究任務</a><a href="#incident" class="nav-link">⚠ 異常事件</a>
+    <a href="#lab" class="nav-link">⌘ 互動實驗室</a><a href="#records" class="nav-link">▣ 研究紀錄</a>
+  </nav>
+  <div class="top-actions"><span class="online-dot"></span><span class="online-label">SYSTEM ONLINE</span><button class="icon-btn" id="settingsBtn" title="設定">⚙</button></div>
+</header>
+
+<main>
+<section id="home" class="page-section hero-section">
+  <div class="hero-copy">
+    <p class="eyebrow">CLASSIFIED FACILITY / LEVEL 04</p>
+    <h1>怪奇生物<br><em>研究所</em></h1>
+    <p class="hero-en">INSTITUTE OF WEIRD CREATURES</p>
+    <p class="hero-desc">世界仍有許多生命，尚未被人類理解。<br>在這裡，探索未知、記錄異常，並學會與牠們共存。</p>
+    <div class="hero-buttons"><button class="btn btn-primary" id="startResearch">開始探索 <span>→</span></button><button class="btn btn-ghost" id="continueBtn">讀取研究紀錄</button></div>
+    <div class="hero-stats"><div><b id="heroDiscovered">0 / 12</b><small>已發現生物</small></div><div><b id="heroResearch">0 RP</b><small>研究點數</small></div><div><b id="heroLevel">LV.01</b><small>研究員等級</small></div></div>
+  </div>
+  <div class="hero-art">
+    <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+    <div class="hero-creature"><img src="assets/creatures/mcri-001.svg" alt="影噬角色插畫"></div>
+    <div class="floating-tag tag-top"><span class="pulse"></span>生命訊號穩定</div>
+    <div class="floating-tag tag-bottom">MCRI-001 / SHADOW</div>
+    <div class="hero-scan"></div>
+  </div>
+
+
+  <div class="home-dashboard">
+    <article class="home-announcement panel">
+      <div class="home-card-head"><span class="eyebrow">INSTITUTE BULLETIN / 公告</span><span class="bulletin-badge">重要通知</span></div>
+      <div class="bulletin-content">
+        <span class="bulletin-date">2041.06.18 — NOTICE 04</span>
+        <h3>北區收容設施完成升級</h3>
+        <p>新型監測設備已正式啟用。研究員進入高危收容區前，請確認個人識別與防護裝備。</p>
+        <a href="#incident" class="bulletin-link">查看事件中心 <span>↗</span></a>
+      </div>
+    </article>
+    <article class="home-recent panel">
+      <div class="home-card-head"><span class="eyebrow">RECENT INCIDENT / 最近事件</span><span class="event-live"><i></i> MONITORING</span></div>
+      <div class="recent-event-feature">
+        <div class="event-mark">⚠</div>
+        <div><small>INCIDENT LOG / 06-18</small><b>低光區域出現短暫訊號波動</b><p>監測系統已自動記錄，等待研究員進一步確認。</p></div>
+      </div>
+      <div class="recent-event-row"><span class="event-dot"></span><span>影噬的活動訊號維持穩定</span><small>剛剛</small></div>
+      <div class="recent-event-row"><span class="event-dot muted-dot"></span><span>研究資料庫同步完成</span><small>今日</small></div>
+    </article>
+    <article class="home-researcher panel">
+      <div class="home-card-head"><span class="eyebrow">RESEARCHER PROFILE</span><span class="profile-status">ACTIVE</span></div>
+      <div class="home-profile-main"><div class="home-avatar">R</div><div><small>目前登入研究員</small><h3 id="homeResearcherName">見習研究員</h3><span id="homeResearcherLevel">LV.01 / TRAINEE</span></div></div>
+      <div class="home-profile-progress"><div class="progress-label"><span>研究員經驗</span><b id="homeXpText">0 / 100 EXP</b></div><div class="progress-track"><i id="homeXpBar"></i></div></div>
+      <div class="home-profile-stats"><div><b id="homeDiscoverCount">1</b><small>已發現</small></div><div><b id="homeRpCount">120</b><small>研究點數 RP</small></div><div><b id="homeInteractionCount">0</b><small>互動次數</small></div></div>
+      <a href="#records" class="profile-link">查看研究員檔案 ↗</a>
+    </article>
+  </div>
+\n  <div class="home-menu-block">
+    <div class="section-heading compact-heading"><div><p class="eyebrow">FACILITY DIRECTORY</p><h2>選擇部門</h2><p>選擇你要進行的研究工作。</p></div></div>
+    <div class="facility-grid home-facility-grid">
+      <a class="facility-card field-card" href="#exploration"><span class="facility-icon">⌁</span><b>野外探索</b><small>FIELD EXPLORATION</small><p>前往未知區域，遭遇異常並帶回樣本。</p><span class="card-arrow">↗</span></a>
+      <a class="facility-card" href="#database"><span class="facility-icon">◈</span><b>生物圖鑑</b><small>CREATURE DATABASE</small><p>查閱已發現生命體與分類資料。</p><span class="card-arrow">↗</span></a>
+      <a class="facility-card" href="#lab"><span class="facility-icon">⌘</span><b>互動實驗室</b><small>INTERACTION LAB</small><p>與收容生物互動，觀察行為變化。</p><span class="card-arrow">↗</span></a>
+      <a class="facility-card" href="#missions"><span class="facility-icon">⚑</span><b>研究任務</b><small>RESEARCH MISSIONS</small><p>完成研究工作，取得研究點數。</p><span class="card-arrow">↗</span></a>
+      <a class="facility-card" href="#incident"><span class="facility-icon">⚠</span><b>異常事件</b><small>INCIDENT RESPONSE</small><p>查看並觸發研究所異常事件。</p><span class="card-arrow">↗</span></a>
+      <a class="facility-card" href="#records"><span class="facility-icon">▣</span><b>研究紀錄</b><small>RESEARCH RECORDS</small><p>查看研究歷程、事件與存檔。</p><span class="card-arrow">↗</span></a>
+      <a class="facility-card" href="#settings"><span class="facility-icon">⚙</span><b>系統設定</b><small>SYSTEM SETTINGS</small><p>管理研究員檔案及網站設定。</p><span class="card-arrow">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="guide" class="page-section view-alias" aria-hidden="true"></section>
+<section id="exploration" class="page-section exploration-section">
+ <div class="section-heading"><div><p class="eyebrow">FIELD OPERATIONS / PHASE 01</p><h2>探索行動</h2><p>選擇區域、消耗行動能量，遭遇異常並帶回研究資料。</p></div><span class="section-index">01 / FIELD</span></div>
+ <div class="explore-resource-bar panel"><div><small>探索能量</small><b id="exploreEnergy">5 / 5</b></div><div><small>研究點數 RP</small><b id="exploreRp">120</b></div><div><small>樣本</small><b id="exploreSamples">0</b></div><div><small>探索資料</small><b id="exploreData">0</b></div><button class="btn btn-secondary" id="restExplore">返回研究所／補充能量</button></div>
+ <div class="region-grid" id="regionGrid">
+  <button class="region-card selected" data-region="forest"><span class="region-art forest-art"></span><span class="region-info"><b>暗影森林</b><small>LOW RISK · 初始區域</small><p>霧氣覆蓋的森林，適合初期探索與基礎觀察。</p><em>危險度：低</em></span></button>
+  <button class="region-card" data-region="facility"><span class="region-art facility-art"></span><span class="region-info"><b>廢棄研究區</b><small>MEDIUM RISK · LV.1</small><p>失去電力的研究設施，可能找到舊研究紀錄。</p><em>危險度：中</em></span></button>
+  <button class="region-card locked" data-region="abyss"><span class="region-art abyss-art"></span><span class="region-info"><b>深淵區域</b><small>HIGH RISK · LV.2 解鎖</small><p>深層未知生態，稀有樣本與高危生物出沒。</p><em>危險度：高</em></span></button>
+  <button class="region-card locked" data-region="rift"><span class="region-art rift-art"></span><span class="region-info"><b>異次元裂縫</b><small>ANOMALY · LV.3 解鎖</small><p>空間不穩定，遭遇內容可能違反常理。</p><em>危險度：未知</em></span></button>
+ </div>
+ <div class="explore-console panel"><div class="console-head"><div><p class="eyebrow">EXPLORATION TERMINAL</p><h3 id="regionTitle">暗影森林</h3><p id="regionDesc" class="muted">霧氣覆蓋的森林，適合初期探索與基礎觀察。</p></div><button class="btn btn-primary" id="exploreAction">開始探索 ↗</button></div><div id="encounterBox" class="encounter-box"><div class="encounter-placeholder"><span>⌁</span><b>等待研究員啟動探索</b><small>SELECT REGION / INITIATE FIELD OPERATION</small></div></div><div class="explore-log-wrap"><b>近期探索紀錄</b><ul id="exploreLog"><li>尚未進行探索。</li></ul></div></div>
+ <div class="research-progress-panel panel"><div class="section-heading compact-heading"><div><p class="eyebrow">SPECIMEN ANALYSIS</p><h3>生物研究進度</h3><p>探索獲得的資料會推進研究階段。</p></div></div><div id="researchProgressList" class="research-progress-list"></div></div>
+</section>
+
+
+<section id="database" class="page-section">
+  <div class="section-heading"><div><p class="eyebrow">SPECIMEN ARCHIVE</p><h2>生物圖鑑</h2><p>研究所目前建檔的 12 種未知生命體。</p></div><span class="section-index">02 / 06</span></div>
+  <div class="database-toolbar"><label class="search-box">⌕ <input id="creatureSearch" type="search" placeholder="搜尋名稱、編號或能力…"></label><div class="filter-row" id="categoryFilters"><button class="filter-chip active" data-filter="全部">全部</button><button class="filter-chip" data-filter="暗影系">暗影系</button><button class="filter-chip" data-filter="機械系">機械系</button><button class="filter-chip" data-filter="變異系">變異系</button><button class="filter-chip" data-filter="深海系">深海系</button><button class="filter-chip" data-filter="異界系">異界系</button><button class="filter-chip" data-filter="神話系">神話系</button><button class="filter-chip" data-filter="未知">未知</button></div></div>
+  <div class="database-layout"><div class="creature-grid" id="creatureGrid"></div><aside class="detail-panel" id="creatureDetail"><div class="empty-detail"><span>◈</span><b>選擇一個研究對象</b><small>SELECT SPECIMEN TO VIEW FILE</small></div></aside></div>
+</section>
+
+<section id="missions" class="page-section">
+  <div class="section-heading"><div><p class="eyebrow">TASK MANAGEMENT</p><h2>研究任務</h2><p>完成研究所指派的工作，累積經驗與研究點數。</p></div><span class="section-index">03 / 06</span></div>
+  <div class="mission-layout"><div class="mission-list" id="missionList"></div><aside class="panel mission-summary"><p class="eyebrow">DAILY PROGRESS</p><h3>今日研究進度</h3><div class="big-progress"><b id="missionCount">0 / 4</b><span>任務完成</span></div><div class="progress-track"><i id="missionProgress"></i></div><p class="muted">完成任務可獲得 RP，提升研究員等級。</p><button class="btn btn-secondary full" id="claimAll">領取已完成獎勵</button></aside></div>
+</section>
+
+<section id="incident" class="page-section">
+  <div class="section-heading"><div><p class="eyebrow">INCIDENT RESPONSE CENTER</p><h2>異常事件中心</h2><p>研究所可能隨時出現未知狀況，請選擇你的處置方式。</p></div><span class="section-index">04 / 07</span></div>
+  <div class="panel incident-panel"><div><p class="eyebrow">LIVE MONITORING</p><h3>等待異常訊號</h3><p class="muted">啟動一次模擬事件，透過不同選擇查看分支結果。事件處置會記錄在研究紀錄中，並推進相關任務。</p></div><button class="btn btn-primary" id="triggerEvent">啟動事件模擬 ↗</button></div>
+</section>
+
+<section id="lab" class="page-section">
+  <div class="section-heading"><div><p class="eyebrow">BEHAVIORAL OBSERVATION</p><h2>互動實驗室</h2><p>選擇已發現的生物，進行觀察與互動。</p></div><span class="section-index">05 / 07</span></div>
+  <div class="lab-layout"><div class="panel lab-creature"><div class="lab-image-wrap"><img id="labImage" src="assets/creatures/mcri-001.svg" alt="目前互動生物"></div><p class="eyebrow" id="labId">MCRI-001</p><h3 id="labName">影噬</h3><p class="muted" id="labMood">牠正安靜地觀察你。</p><div class="affection-line"><span>親密程度</span><b id="affectionValue">0 / 100</b></div><div class="progress-track"><i id="affectionBar"></i></div><select id="labSelect" aria-label="選擇互動生物"></select></div>
+  <div class="panel lab-actions"><p class="eyebrow">INTERACTION MENU</p><h3>選擇互動方式</h3><div class="interaction-grid"><button class="interaction-btn" data-action="feed"><span>◉</span><b>餵食</b><small>提供適合的食物</small></button><button class="interaction-btn" data-action="pet"><span>♡</span><b>撫摸</b><small>建立信任關係</small></button><button class="interaction-btn" data-action="observe"><span>⌕</span><b>觀察</b><small>記錄行為反應</small></button><button class="interaction-btn" data-action="scan"><span>⌬</span><b>掃描</b><small>取得研究數據</small></button></div><div class="lab-feedback" id="labFeedback">等待研究員操作。請選擇一種互動方式。</div><div class="lab-log"><b>近期互動紀錄</b><ul id="interactionLog"><li>尚無互動紀錄。</li></ul></div></div></div>
+</section>
+
+<section id="records" class="page-section">
+  <div class="section-heading"><div><p class="eyebrow">PERSONNEL & ARCHIVE</p><h2>研究紀錄</h2><p>你的研究進度會自動保存在目前瀏覽器。</p></div><span class="section-index">06 / 07</span></div>
+  <div class="records-grid"><div class="panel profile-panel"><div class="profile-avatar">R</div><p class="eyebrow">VISITOR PERSONNEL FILE</p><h3 id="researcherName">見習研究員</h3><div class="level-line"><b id="profileLevel">LV.01</b><span id="profileXp">0 / 100 EXP</span></div><div class="progress-track"><i id="xpBar"></i></div><div class="profile-stats"><div><b id="profileDiscovered">0</b><small>已發現</small></div><div><b id="profileInteractions">0</b><small>互動次數</small></div><div><b id="profileRp">0</b><small>研究點數</small></div></div><button class="btn btn-secondary full" id="editName">修改研究員名稱</button></div>
+  <div class="panel archive-panel"><p class="eyebrow">SAVE MANAGEMENT</p><h3>存檔管理</h3><p class="muted">自動存檔會在互動後更新。也可以手動匯出或匯入備份。</p><div class="save-status"><span class="online-dot"></span><span id="saveStatus">本機存檔已啟用</span></div><div class="save-actions"><button class="btn btn-primary" id="saveNow">立即存檔</button><button class="btn btn-secondary" id="exportSave">匯出存檔</button><label class="btn btn-secondary file-label">匯入存檔<input type="file" id="importSave" accept="application/json"></label><button class="btn btn-danger" id="resetSave">重置進度</button></div><div class="archive-log"><b>研究紀錄摘要</b><ul id="recordLog"><li>研究員尚未建立紀錄。</li></ul></div></div></div>
+</section>
+
+<section id="settings" class="page-section settings-section">
+  <div class="section-heading"><div><p class="eyebrow">SYSTEM CONFIGURATION</p><h2>系統設定</h2><p>管理研究所介面與訪客資料。</p></div><span class="section-index">07 / 07</span></div>
+  <div class="panel settings-panel"><label class="toggle-row"><span><b>減少動畫效果</b><small>降低背景光效與轉場動畫。</small></span><input type="checkbox" id="reduceMotion"></label><label class="toggle-row"><span><b>介面音效</b><small>本版本預留音效設定。</small></span><input type="checkbox" id="soundToggle"></label><div class="notice"><b>訪客模式說明</b><p>目前進度儲存在這台裝置的瀏覽器中。清除網站資料或更換裝置前，請先匯出存檔。未來可擴充雲端帳號與跨裝置同步。</p></div></div>
+</section>
+<footer><span>M.C.R.I. © 2041–2099</span><span>UNAUTHORIZED ACCESS IS PROHIBITED</span><span>V2.0 / DIMENSIONAL FIELD BUILD</span></footer>
+</main>
+
+<div class="toast" id="toast" role="status"></div>
+<div class="modal-backdrop" id="eventModal"><div class="modal panel"><button class="modal-close" id="closeEvent">×</button><p class="eyebrow">UNEXPECTED INCIDENT</p><div class="danger-label">⚠ 異常事件</div><h2 id="eventTitle">收容區異常</h2><p id="eventText"></p><div id="eventChoices" class="event-choices"></div><div id="eventResult" class="event-result hidden"></div></div></div>
+<script src="assets/js/app.js"></script>
+</body></html>

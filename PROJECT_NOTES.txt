@@ -1,0 +1,8 @@
+M.C.R.I. V1.0 - Original fictional creature research game prototype. All creature portraits are original SVG illustrations created for this project.
+
+
+MCRI V1.2 HOME MENU UPDATE
+- Homepage now includes department/activity menu cards.
+- Navigation switches to one active section at a time (hash-based).
+- Creature database, missions, incident, lab, records, settings are separate views.
+- Guide navigation alias returns to home menu.

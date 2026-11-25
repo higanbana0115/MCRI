@@ -1,0 +1,242 @@
+[
+  {
+    "id": "MCRI-001",
+    "name": "影噬",
+    "english": "SHADOW",
+    "category": "暗影系",
+    "danger": 1,
+    "rarity": "常見",
+    "color": "#70e7db",
+    "accent": "#172d42",
+    "desc": "喜歡跟隨研究員的影子生物。牠能短暫融入陰影，並在黑暗中快速移動。",
+    "abilities": [
+      "影子融合",
+      "短距離瞬移"
+    ],
+    "habitat": "低光照收容室",
+    "food": "暗光晶粒",
+    "personality": "黏人、好奇",
+    "secret": "牠的影子偶爾會比本體早一步移動。",
+    "shape": "cat"
+  },
+  {
+    "id": "MCRI-002",
+    "name": "幽浮水母",
+    "english": "LUMINA",
+    "category": "深海系",
+    "danger": 2,
+    "rarity": "稀有",
+    "color": "#b69bff",
+    "accent": "#2c2860",
+    "desc": "漂浮在空中的半透明生物，會以柔和光脈衝回應聲音。",
+    "abilities": [
+      "光脈衝",
+      "精神干擾"
+    ],
+    "habitat": "低重力水槽",
+    "food": "浮游能量液",
+    "personality": "安靜、敏感",
+    "secret": "牠的光芒會在附近出現異常訊號時閃爍。",
+    "shape": "jelly"
+  },
+  {
+    "id": "MCRI-003",
+    "name": "機械狐",
+    "english": "GEAR-09",
+    "category": "機械系",
+    "danger": 2,
+    "rarity": "稀有",
+    "color": "#f2a65a",
+    "accent": "#384b62",
+    "desc": "由未知合金與仿生組織構成，能理解簡單指令並修復自身。",
+    "abilities": [
+      "電磁干擾",
+      "資料解碼"
+    ],
+    "habitat": "電磁隔離室",
+    "food": "微型能源芯",
+    "personality": "聰明、狡猾",
+    "secret": "核心晶片使用了研究所尚未公開的技術。",
+    "shape": "fox"
+  },
+  {
+    "id": "MCRI-004",
+    "name": "血枝鹿",
+    "english": "CRIMSON",
+    "category": "變異系",
+    "danger": 3,
+    "rarity": "稀有",
+    "color": "#e77d82",
+    "accent": "#4b293d",
+    "desc": "鹿角內有紅色脈絡流動，周遭植物會隨牠的情緒生長。",
+    "abilities": [
+      "快速再生",
+      "植物控制"
+    ],
+    "habitat": "模擬森林區",
+    "food": "高濃度葉片",
+    "personality": "警戒、守護領地",
+    "secret": "牠的角上長出的枝葉，與失蹤研究員日誌中的植物相同。",
+    "shape": "deer"
+  },
+  {
+    "id": "MCRI-005",
+    "name": "無面者",
+    "english": "NULL",
+    "category": "異界系",
+    "danger": 4,
+    "rarity": "極稀有",
+    "color": "#d7d0ff",
+    "accent": "#17182b",
+    "desc": "外型近似人形，沒有可辨識五官，卻能精準模仿聽過的聲音。",
+    "abilities": [
+      "聲音模仿",
+      "輪廓偽裝"
+    ],
+    "habitat": "雙重門禁收容區",
+    "food": "未知",
+    "personality": "無法判定",
+    "secret": "監控畫面顯示牠仍在艙內，但門禁紀錄顯示牠曾離開。",
+    "shape": "wraith"
+  },
+  {
+    "id": "MCRI-006",
+    "name": "深淵之眼",
+    "english": "ABYSS",
+    "category": "深海系",
+    "danger": 4,
+    "rarity": "極稀有",
+    "color": "#5dd5e8",
+    "accent": "#102d49",
+    "desc": "體型巨大的深海生命體，能以低頻聲波感知遠處的物體。",
+    "abilities": [
+      "聲波震盪",
+      "遠距感知"
+    ],
+    "habitat": "深海壓力艙",
+    "food": "高壓生物膠",
+    "personality": "沉靜、具有智慧",
+    "secret": "牠會在研究員提及「原初」時停止活動。",
+    "shape": "leviathan"
+  },
+  {
+    "id": "MCRI-007",
+    "name": "監視者",
+    "english": "WATCHER",
+    "category": "機械系",
+    "danger": 3,
+    "rarity": "特殊",
+    "color": "#f4c56c",
+    "accent": "#353044",
+    "desc": "漂浮的單眼機械體，能追蹤訊號並記錄周遭活動。",
+    "abilities": [
+      "訊號追蹤",
+      "影像記錄"
+    ],
+    "habitat": "中央監控室",
+    "food": "電力",
+    "personality": "沉默、持續觀察",
+    "secret": "有時會在沒有任何操作時，出現在玩家身後的監控畫面。",
+    "shape": "eye"
+  },
+  {
+    "id": "MCRI-008",
+    "name": "晶核",
+    "english": "CRYSTAL",
+    "category": "變異系",
+    "danger": 2,
+    "rarity": "特殊",
+    "color": "#8ad7ff",
+    "accent": "#334a70",
+    "desc": "由多面晶體構成的生命體，能吸收環境能量並折射光線。",
+    "abilities": [
+      "能量吸收",
+      "光線折射"
+    ],
+    "habitat": "能量觀測室",
+    "food": "低頻能量波",
+    "personality": "平靜、緩慢",
+    "secret": "晶體內部似乎封存著一段微型影像。",
+    "shape": "crystal"
+  },
+  {
+    "id": "MCRI-009",
+    "name": "古代守門者",
+    "english": "GATEKEEPER",
+    "category": "神話系",
+    "danger": 4,
+    "rarity": "極稀有",
+    "color": "#e9c879",
+    "accent": "#453d32",
+    "desc": "古老巨狼型生物，會守護特定空間入口，對符號有反應。",
+    "abilities": [
+      "空間守護",
+      "短距移動"
+    ],
+    "habitat": "遺跡模擬區",
+    "food": "古代礦石",
+    "personality": "沉穩、戒備",
+    "secret": "牠守護的門，並不在研究所的平面圖上。",
+    "shape": "wolf"
+  },
+  {
+    "id": "MCRI-010",
+    "name": "寄生體",
+    "english": "PARASITE",
+    "category": "變異系",
+    "danger": 4,
+    "rarity": "危險",
+    "color": "#a7e36f",
+    "accent": "#35452e",
+    "desc": "具有發光核心的微型異形，能附著在無生命物體上並改變其結構。",
+    "abilities": [
+      "物質附著",
+      "細胞複製"
+    ],
+    "habitat": "生物隔離艙",
+    "food": "有機培養液",
+    "personality": "敏捷、具攻擊性",
+    "secret": "牠似乎能辨認其他收容生物的弱點。",
+    "shape": "bug"
+  },
+  {
+    "id": "MCRI-011",
+    "name": "墜落者",
+    "english": "FALLEN",
+    "category": "異界系",
+    "danger": 4,
+    "rarity": "極稀有",
+    "color": "#c4a0ff",
+    "accent": "#302344",
+    "desc": "帶有破碎環狀結構的漂浮生命體，周遭重力偶爾會短暫失衡。",
+    "abilities": [
+      "重力扭曲",
+      "空間裂縫"
+    ],
+    "habitat": "重力穩定室",
+    "food": "未知",
+    "personality": "冷漠、難以接近",
+    "secret": "牠出現時，研究所的時鐘會慢上 11 秒。",
+    "shape": "fallen"
+  },
+  {
+    "id": "MCRI-012",
+    "name": "原初之物",
+    "english": "THE ORIGIN",
+    "category": "未知",
+    "danger": 5,
+    "rarity": "封存",
+    "color": "#f17b91",
+    "accent": "#271b36",
+    "desc": "無法完整辨識的巨大生命體。現有資料不足以確認其外型、能力與起源。",
+    "abilities": [
+      "未知",
+      "未知"
+    ],
+    "habitat": "零號封鎖區",
+    "food": "未知",
+    "personality": "未知",
+    "secret": "部分研究紀錄指出，研究所可能是為了觀察它而建立。",
+    "shape": "origin"
+  }
+]
